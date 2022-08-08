@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+  --white: #ffffff;
+  --red: #ee5d09;
+  --black: #151516;
+  --gray: #85888c;
+  --orange: #e39f2d;
+  --greenlight: #d6ec0e;
+  --mainfont: Poppins;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--mainfont);
+  background-color: var(--white);
+}
+
+.hero {
+  width: 80%;
+  height: 100vh;
+  position: relative;
+  margin: 100px auto;
+  overflow: hidden;
+}
+
+.btn-box {
+  display: flex;
+  border-bottom: 2px solid var(--greenlight);
+  padding: 10px;
+}
+
+.btn-box button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: var(--greenlight);
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(67, 80, 34, 0.21);
+  -moz-box-shadow: 0px 0px 10px 5px rgba(67, 80, 34, 0.21);
+  box-shadow: 0px 0px 10px 5px rgba(67, 80, 34, 0.21);
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  margin-right: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn-box button:hover {
+  color: var(--orange);
+}
+
+button img {
+  width: 20px;
+  margin: 10px;
+}
+
+.content-right img {
+  width: 350px;
+  border-radius: 10px;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% auto;
+  position: absolute;
+  transform: translateX(110%);
+  transition: 0.3s;
+}
+.content-left {
+  flex-basis: 50%;
+  margin-right: 30px;
+}
+.content-left p {
+  font-size: 13px;
+  padding: 30px 0;
+}
+.content-left a {
+  width: 150px;
+  padding: 8px 5px;
+  display: block;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: var(--orange);
+  color: var(--white);
+  text-align: center;
+}
+.content-right {
+  flex-basis: 50%;
+  text-align: center;
+}
+#content1 {
+  transform: translateX(0px);
+}
+#btn1 {
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .btn-box {
+    display: block;
+    border-bottom: 1px solid var(--gray);
+  }
+  .btn-box button {
+    background: var(--greenlight);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .content {
+    display: block;
+    /* width: 100%; */
+    padding: 10px;
+  }
+
+  .content-left {
+    margin-bottom: 20%;
+}
+
+  .content-left p {
+    font-size: 13px;
+    padding: 30px 10px;
+  }
+
+  .content-right {
+    padding: 10px;
+    margin-bottom: 20%;
+}
+
+.content-right img {
+    width: 100%;
+    height: auto;
+}
+}
