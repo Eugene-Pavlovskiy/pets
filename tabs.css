@@ -10,19 +10,7 @@
   --mainfont: Poppins;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-}
-body {
-  font-family: var(--mainfont);
-  background-color: var(--white);
-}
-
-.hero {
+.tab {
   width: 80%;
   height: 100vh;
   position: relative;
@@ -107,7 +95,7 @@ button img {
 }
 
 @media (max-width: 768px) {
-  .hero {
+  .tab {
     width: 100%;
     height: 100vh;
     position: relative;
@@ -138,7 +126,7 @@ button img {
 
   .content-left {
     margin-bottom: 20%;
-}
+  }
 
   .content-left p {
     font-size: 13px;
@@ -148,10 +136,10 @@ button img {
   .content-right {
     padding: 10px;
     margin-bottom: 20%;
-}
+  }
 
-.content-right img {
+  .content-right img {
     width: 100%;
     height: auto;
-}
+  }
 }
